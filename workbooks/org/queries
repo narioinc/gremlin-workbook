@@ -1,0 +1,2 @@
+g.V()  //all vertices
+g.V().has('orgid', '2') //vertice having orgid 2
