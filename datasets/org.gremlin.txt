@@ -1,0 +1,25 @@
+g.addV('Org').as('1').
+  addV('Org').as('2').
+  addV('Org').as('3').
+  addV('Org').as('4').
+  addV('Org').as('5').
+  addV('Org').as('6').
+  addV('Org').as('7').
+  addV('Org').as('8').
+  addV('Org').as('9').
+  addV('Org').as('10').
+  addV('Org').as('11').
+  addV('Org').as('12').
+  addV('Org').as('13').
+  addV('Org').as('14').
+  addE('child').from('2').to('1').addE('child').
+  from('3').to('1').addE('child').from('6').
+  to('2').addE('child').from('4').to('2').
+  addE('child').from('5').to('2').addE('child').
+  from('7').to('3').addE('child').from('8').
+  to('3').addE('child').from('9').to('4').
+  addE('child').from('10').to('5').
+  addE('child').from('11').to('5').
+  addE('child').from('12').to('11').
+  addE('child').from('14').to('6').
+  addE('child').from('13').to('6')
