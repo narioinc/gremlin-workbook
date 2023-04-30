@@ -1,2 +1,8 @@
-g.V()  //all vertices
-g.V().has('orgid', '2') //vertice having orgid 2
+//g.V().has('orgid', eq(4))
+//g.V().has('orgid', eq(4)).fold()  //fold the results to an simple array
+//g.V().has('orgid', eq(2)).repeat(in('child')).times(2).emit()   //emit all children till secodn order in the chain
+//g.V().has('orgid', eq(2)).repeat(in('child')).times(2).emit().count()  //count of children till second order
+
+
+//g.V().has('orgid', eq(2)).repeat(in('child')).emit().until(inE('child').count().is(0)) //count all children till leaf node
+//g.V().has('orgid', eq(2)).repeat(out('child')).emit().until(outE('child').count().is(0)) //count all parents till root
