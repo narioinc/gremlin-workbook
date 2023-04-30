@@ -1,0 +1,8 @@
+Connecting via grewmlin console
+1) ensure you have java 8 or 11 and check java version
+2) to connect gremlin> :remote connect tinkerpop.server conf/remote.yaml
+3) then permanently connect to server gremlin> ":remote console"
+
+Loading data
+
+
