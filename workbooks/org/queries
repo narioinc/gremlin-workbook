@@ -6,3 +6,16 @@
 
 //g.V().has('orgid', eq(2)).repeat(in('child')).emit().until(inE('child').count().is(0)) //count all children till leaf node
 //g.V().has('orgid', eq(2)).repeat(out('child')).emit().until(outE('child').count().is(0)) //count all parents till root
+
+
+//g.V().has('orgid', 2).repeat(in('child')).until(inE().count().is(0)).path()
+//g.V().has('orgid', 2).repeat(in('child')).until(inE().count().is(0)).emit()  //children
+
+//g.V().has('orgid', 2).repeat(in('child')).until(inE().count().is(0)).emit().has('orgid', 6).hasNext() // check for children
+
+
+//g.V().has('orgid', 13).repeat(out('child')).until(outE().count().is(0)).path()  //parent path (single)
+//g.V().has('orgid', 13).repeat(out('child')).until(outE().count().is(0)).emit().path() //all possible sub paths. 
+
+
+g.V().has('orgid', 13).repeat(out('child')).until(outE().count().is(0)).emit().has('orgid', 2).hasNext()  //has parent in path.
